@@ -34,19 +34,19 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
             <version>3.3.5</version>
             <configuration>
-                <mainClass>com.example.DisplayPersonsfile</mainClass>
+                <mainClass>com.example.DisplayPersons</mainClass>
             </configuration>
         </plugin>
 
         <!-- Exec Maven Plugin -->
-        <plugin>
+        <!-- <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
             <version>3.0.0</version>
             <configuration>
-                <mainClass>com.example.DisplayPersonsfile</mainClass>
+                <mainClass>com.example.DisplayPersons</mainClass>
             </configuration>
-        </plugin>
+        </plugin> -->
     </plugins>
   </build>
 </project>
