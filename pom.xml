@@ -28,23 +28,25 @@
   </dependencies>
   <build>
     <plugins>
-        <!-- Plugin to allow execution of main class -->
+        <!-- Spring Boot Maven Plugin -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>3.3.5</version>
+            <configuration>
+                <mainClass>com.example.DisplayPersonsfile</mainClass>
+            </configuration>
+        </plugin>
+
+        <!-- Exec Maven Plugin -->
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.1.0</version>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>java</goal>
-                    </goals>
-                </execution>
-            </executions>
+            <version>3.0.0</version>
             <configuration>
-                <mainClass>com.example.DisplayPersons</mainClass>
+                <mainClass>com.example.DisplayPersonsfile</mainClass>
             </configuration>
         </plugin>
-        
     </plugins>
   </build>
 </project>
