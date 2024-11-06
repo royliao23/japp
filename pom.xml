@@ -44,6 +44,7 @@
                 <mainClass>com.example.DisplayPersons</mainClass>
             </configuration>
         </plugin>
+        
     </plugins>
   </build>
 </project>
